@@ -1,0 +1,352 @@
+[
+  {
+    "id": "q001",
+    "question": "How do I create a basic FastAPI application?",
+    "expected_answer": "Create a FastAPI instance, define route functions with decorators like @app.get(), and run with uvicorn.",
+    "topic": "fastapi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q002",
+    "question": "How does FastAPI handle request body validation?",
+    "expected_answer": "FastAPI uses Pydantic models to automatically validate and parse incoming JSON request bodies.",
+    "topic": "fastapi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q003",
+    "question": "What is the purpose of path parameters in FastAPI?",
+    "expected_answer": "Path parameters allow you to capture dynamic values from the URL path and pass them to route functions.",
+    "topic": "fastapi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q004",
+    "question": "How do I set up a GitHub Actions workflow for a Python project?",
+    "expected_answer": "Create a YAML file in .github/workflows/ directory, define triggers, jobs, and steps including python setup and pip install.",
+    "topic": "github_actions",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q005",
+    "question": "What is the syntax for defining a job in GitHub Actions?",
+    "expected_answer": "Jobs are defined under the jobs key in the workflow YAML, each with a runs-on field and steps list.",
+    "topic": "github_actions",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q006",
+    "question": "How do I trigger a GitHub Actions workflow on push?",
+    "expected_answer": "Use the on: push trigger in your workflow YAML file, optionally specifying branches.",
+    "topic": "github_actions",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q007",
+    "question": "How do I package a Python project for distribution?",
+    "expected_answer": "Create a pyproject.toml file with project metadata, build with a build backend like setuptools, and upload to PyPI.",
+    "topic": "python_packaging",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q008",
+    "question": "What file is required to publish a Python package to PyPI?",
+    "expected_answer": "A pyproject.toml file containing package metadata like name, version, dependencies, and build system configuration.",
+    "topic": "python_packaging",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q009",
+    "question": "How do I containerise a Python application with Docker?",
+    "expected_answer": "Create a Dockerfile with a base Python image, copy your code, install requirements, and define the CMD to run your app.",
+    "topic": "docker",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q010",
+    "question": "What is docker-compose used for?",
+    "expected_answer": "Docker Compose is used to define and run multi-container applications using a YAML configuration file.",
+    "topic": "docker",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q011",
+    "question": "How do I define environment variables in a Dockerfile?",
+    "expected_answer": "Use the ENV instruction in the Dockerfile to set environment variables, or pass them at runtime with -e flag or .env file.",
+    "topic": "docker",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q012",
+    "question": "What is a virtual environment in Python?",
+    "expected_answer": "A virtual environment is an isolated Python environment that keeps project dependencies separate from the system Python.",
+    "topic": "python_packaging",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q013",
+    "question": "How do FastAPI path operations work?",
+    "expected_answer": "Path operations are functions decorated with HTTP method decorators like @app.get() or @app.post() that define API endpoints.",
+    "topic": "fastapi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q014",
+    "question": "What are GitHub Actions runners?",
+    "expected_answer": "Runners are servers that execute GitHub Actions workflows, either GitHub-hosted or self-hosted.",
+    "topic": "github_actions",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q015",
+    "question": "How do I expose a port in Docker?",
+    "expected_answer": "Use the EXPOSE instruction in the Dockerfile to document which ports the container listens on, and -p flag when running.",
+    "topic": "docker",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q016",
+    "question": "How do I use query parameters in FastAPI?",
+    "expected_answer": "Query parameters are function parameters not part of the path, FastAPI automatically reads them from the URL query string.",
+    "topic": "fastapi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q017",
+    "question": "How do I return a JSON response in FastAPI?",
+    "expected_answer": "Return a dictionary from your route function and FastAPI automatically converts it to a JSON response.",
+    "topic": "fastapi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q018",
+    "question": "What is Pydantic used for in FastAPI?",
+    "expected_answer": "Pydantic is used for data validation and serialization, defining the shape and types of request and response bodies.",
+    "topic": "fastapi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q019",
+    "question": "How do I handle errors in FastAPI?",
+    "expected_answer": "Use HTTPException to raise HTTP errors with status codes and detail messages, or define custom exception handlers.",
+    "topic": "fastapi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q020",
+    "question": "How do I add middleware in FastAPI?",
+    "expected_answer": "Use app.add_middleware() to add middleware classes like CORSMiddleware to handle cross-cutting concerns.",
+    "topic": "fastapi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q021",
+    "question": "What is uvicorn and why is it used with FastAPI?",
+    "expected_answer": "Uvicorn is an ASGI server used to run FastAPI applications, providing high performance async request handling.",
+    "topic": "fastapi",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q022",
+    "question": "How do I use GitHub Actions secrets?",
+    "expected_answer": "Store secrets in repository Settings under Secrets and Variables, then reference them in workflows using secrets.SECRET_NAME.",
+    "topic": "github_actions",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q023",
+    "question": "How do I cache dependencies in GitHub Actions?",
+    "expected_answer": "Use the actions/cache action with a key based on your requirements file to cache pip packages between workflow runs.",
+    "topic": "github_actions",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q024",
+    "question": "How do I run tests in GitHub Actions?",
+    "expected_answer": "Add a step that runs pytest or your test command after setting up Python and installing dependencies in the workflow.",
+    "topic": "github_actions",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q025",
+    "question": "What is a GitHub Actions artifact?",
+    "expected_answer": "Artifacts are files produced during a workflow run that can be uploaded and shared between jobs or downloaded after the run.",
+    "topic": "github_actions",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q026",
+    "question": "How do I set up matrix builds in GitHub Actions?",
+    "expected_answer": "Use the strategy.matrix key to run jobs across multiple configurations like different Python versions simultaneously.",
+    "topic": "github_actions",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q027",
+    "question": "What is a Docker volume?",
+    "expected_answer": "A Docker volume is a persistent storage mechanism that allows data to survive container restarts and be shared between containers.",
+    "topic": "docker",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q028",
+    "question": "What is the difference between CMD and ENTRYPOINT in Docker?",
+    "expected_answer": "ENTRYPOINT defines the executable that always runs, CMD provides default arguments that can be overridden at runtime.",
+    "topic": "docker",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q029",
+    "question": "How do I build a Docker image?",
+    "expected_answer": "Run docker build -t image-name . in the directory containing your Dockerfile to build and tag the image.",
+    "topic": "docker",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q030",
+    "question": "How do I connect multiple containers in Docker Compose?",
+    "expected_answer": "Define a shared network in docker-compose.yml and containers on the same network can communicate using service names as hostnames.",
+    "topic": "docker",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q031",
+    "question": "What is a Docker layer?",
+    "expected_answer": "Each instruction in a Dockerfile creates a layer; layers are cached and reused to speed up subsequent builds.",
+    "topic": "docker",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q032",
+    "question": "How do I use a .dockerignore file?",
+    "expected_answer": "A .dockerignore file lists files and directories to exclude from the Docker build context, similar to .gitignore.",
+    "topic": "docker",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q033",
+    "question": "How do I install a Python package from source?",
+    "expected_answer": "Run pip install . in the project directory or pip install -e . for editable installs using the pyproject.toml or setup.py.",
+    "topic": "python_packaging",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q034",
+    "question": "What is the difference between install_requires and extras_require in Python packaging?",
+    "expected_answer": "install_requires lists mandatory dependencies, extras_require defines optional dependency groups installable with package[extra].",
+    "topic": "python_packaging",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q035",
+    "question": "How do I specify Python version requirements in a package?",
+    "expected_answer": "Use the requires-python field in pyproject.toml to specify the minimum or range of Python versions supported.",
+    "topic": "python_packaging",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q036",
+    "question": "What is pip freeze used for?",
+    "expected_answer": "pip freeze outputs all installed packages and their exact versions, commonly used to generate a requirements.txt file.",
+    "topic": "python_packaging",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q037",
+    "question": "How do I create a reusable GitHub Actions workflow?",
+    "expected_answer": "Use workflow_call trigger to define a reusable workflow that other workflows can call using the uses keyword.",
+    "topic": "github_actions",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q038",
+    "question": "How do I deploy to a server using GitHub Actions?",
+    "expected_answer": "Add a deployment step using SSH actions or cloud provider actions after your build and test steps pass successfully.",
+    "topic": "github_actions",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q039",
+    "question": "What is FastAPI dependency injection?",
+    "expected_answer": "FastAPI's Depends() system allows you to declare reusable dependencies like database connections or auth checks for route functions.",
+    "topic": "fastapi",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q040",
+    "question": "How do I add authentication to FastAPI?",
+    "expected_answer": "Use FastAPI's security utilities like OAuth2PasswordBearer or HTTP Basic Auth combined with dependency injection.",
+    "topic": "fastapi",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q041",
+    "question": "What is OpenAPI and how does FastAPI use it?",
+    "expected_answer": "OpenAPI is a specification for REST APIs; FastAPI automatically generates an OpenAPI schema and interactive docs at /docs.",
+    "topic": "fastapi",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q042",
+    "question": "How do I run a Docker container in detached mode?",
+    "expected_answer": "Use the -d flag with docker run to start the container in the background and return the container ID.",
+    "topic": "docker",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q043",
+    "question": "How do I check Docker container logs?",
+    "expected_answer": "Use docker logs container-name or docker logs -f for live streaming of container output.",
+    "topic": "docker",
+    "difficulty": "easy"
+  },
+  {
+    "id": "q044",
+    "question": "What is a multi-stage Docker build?",
+    "expected_answer": "Multi-stage builds use multiple FROM instructions to create intermediate build stages, keeping the final image small.",
+    "topic": "docker",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q045",
+    "question": "How do I publish a Python package to PyPI?",
+    "expected_answer": "Build the package with python -m build, then upload using twine upload dist/* with your PyPI credentials.",
+    "topic": "python_packaging",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q046",
+    "question": "What is a GitHub Actions environment?",
+    "expected_answer": "Environments are deployment targets with protection rules and secrets, used to control deployment workflows.",
+    "topic": "github_actions",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q047",
+    "question": "How do I use FastAPI background tasks?",
+    "expected_answer": "Use BackgroundTasks parameter in route functions to add tasks that run after the response is returned to the client.",
+    "topic": "fastapi",
+    "difficulty": "hard"
+  },
+  {
+    "id": "q048",
+    "question": "How do I health check a Docker container?",
+    "expected_answer": "Use the HEALTHCHECK instruction in Dockerfile to define a command Docker runs periodically to check container health.",
+    "topic": "docker",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q049",
+    "question": "What is semantic versioning in Python packages?",
+    "expected_answer": "Semantic versioning uses MAJOR.MINOR.PATCH format where MAJOR breaks compatibility, MINOR adds features, PATCH fixes bugs.",
+    "topic": "python_packaging",
+    "difficulty": "medium"
+  },
+  {
+    "id": "q050",
+    "question": "How do I stream responses in FastAPI?",
+    "expected_answer": "Use StreamingResponse with a generator function to stream large responses or real-time data to the client.",
+    "topic": "fastapi",
+    "difficulty": "hard"
+  }
+]
