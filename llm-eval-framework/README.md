@@ -179,7 +179,3 @@ Score 1-5 for faithfulness. Reply with one integer only.
 This approach catches hallucinations and partial answers that keyword matching would miss.
 
 ---
-
-## 📄 License
-
-MIT
